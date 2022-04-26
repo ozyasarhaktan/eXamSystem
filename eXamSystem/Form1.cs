@@ -51,5 +51,17 @@ namespace eXamSystem
                 MessageBox.Show("Tekrar Dene");
             }
         }
+
+        private void lblSifreUnutma_Click(object sender, EventArgs e)
+        {
+            SifremiUnuttum sifremiUnuttum = new SifremiUnuttum(); 
+            sifremiUnuttum.Show();
+            this.Hide();
+        }
+
+        private void btnKayitOl_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

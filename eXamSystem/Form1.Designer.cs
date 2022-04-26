@@ -28,31 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnGiris = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.txtSifre = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
+            this.btnKayitOl = new System.Windows.Forms.Button();
+            this.lblSifreUnutma = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // btnGiris
             // 
-            this.button1.BackColor = System.Drawing.Color.ForestGreen;
-            this.button1.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(274, 369);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(154, 68);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Giriş Yap";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnGiris.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnGiris.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnGiris.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnGiris.Location = new System.Drawing.Point(274, 369);
+            this.btnGiris.Name = "btnGiris";
+            this.btnGiris.Size = new System.Drawing.Size(154, 68);
+            this.btnGiris.TabIndex = 0;
+            this.btnGiris.Text = "Giriş Yap";
+            this.btnGiris.UseVisualStyleBackColor = false;
+            this.btnGiris.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -103,29 +103,31 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Şifre";
             // 
-            // button2
+            // btnKayitOl
             // 
-            this.button2.BackColor = System.Drawing.Color.Firebrick;
-            this.button2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(274, 460);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(154, 68);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Kayıt Ol";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnKayitOl.BackColor = System.Drawing.Color.Firebrick;
+            this.btnKayitOl.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnKayitOl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnKayitOl.Location = new System.Drawing.Point(274, 460);
+            this.btnKayitOl.Name = "btnKayitOl";
+            this.btnKayitOl.Size = new System.Drawing.Size(154, 68);
+            this.btnKayitOl.TabIndex = 6;
+            this.btnKayitOl.Text = "Kayıt Ol";
+            this.btnKayitOl.UseVisualStyleBackColor = false;
+            this.btnKayitOl.Click += new System.EventHandler(this.btnKayitOl_Click);
             // 
-            // label4
+            // lblSifreUnutma
             // 
-            this.label4.AutoSize = true;
-            this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label4.Font = new System.Drawing.Font("Century", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label4.Location = new System.Drawing.Point(253, 543);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(195, 28);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Şifremi Unuttum";
+            this.lblSifreUnutma.AutoSize = true;
+            this.lblSifreUnutma.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblSifreUnutma.Font = new System.Drawing.Font("Century", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblSifreUnutma.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.lblSifreUnutma.Location = new System.Drawing.Point(253, 543);
+            this.lblSifreUnutma.Name = "lblSifreUnutma";
+            this.lblSifreUnutma.Size = new System.Drawing.Size(195, 28);
+            this.lblSifreUnutma.TabIndex = 7;
+            this.lblSifreUnutma.Text = "Şifremi Unuttum";
+            this.lblSifreUnutma.Click += new System.EventHandler(this.lblSifreUnutma_Click);
             // 
             // checkBox1
             // 
@@ -170,14 +172,14 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.lblSifreUnutma);
+            this.Controls.Add(this.btnKayitOl);
             this.Controls.Add(this.txtSifre);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnGiris);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -188,14 +190,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnGiris;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.TextBox txtSifre;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnKayitOl;
+        private System.Windows.Forms.Label lblSifreUnutma;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label5;

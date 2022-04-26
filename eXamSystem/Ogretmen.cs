@@ -21,5 +21,15 @@ namespace eXamSystem
         {
             Application.Exit();
         }
+
+        private void Ogretmen_Load(object sender, EventArgs e)
+        {
+            pnlSoruEkle.Visible = false;
+        }
+
+        private void btnSoruEkle_Click(object sender, EventArgs e)
+        {
+            pnlSoruEkle.Visible = true;
+        }
     }
 }

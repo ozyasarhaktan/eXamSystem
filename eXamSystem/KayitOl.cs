@@ -22,11 +22,11 @@ namespace eXamSystem
         {
             SqlConnection sqlcon = new SqlConnection(connStr);
             SqlCommand cmd = new SqlCommand("insert into Users (userName,userSurname,eMail,password,userTypeID,kullAdi");
-            cmd.Parameters.Add("userName", txtIsim);
-            cmd.Parameters.Add("userSurname", txtSoyisim);
-            cmd.Parameters.Add("eMail", txtEmail);
-            cmd.Parameters.Add("password", txtPassword);
-            cmd.Parameters.Add("kullAdi", txtkullAdi);
+            //cmd.Parameters.Add("userName", txtIsim);
+            //cmd.Parameters.Add("userSurname", txtSoyisim);
+            //cmd.Parameters.Add("eMail", txtEmail);
+            //cmd.Parameters.Add("password", txtPassword);
+            //cmd.Parameters.Add("kullAdi", txtkullAdi);
 
         }
     }

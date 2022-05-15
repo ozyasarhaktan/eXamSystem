@@ -41,12 +41,16 @@
             this.label5 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnKayitTamamla
             // 
             this.btnKayitTamamla.BackColor = System.Drawing.Color.Salmon;
-            this.btnKayitTamamla.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnKayitTamamla.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnKayitTamamla.FlatAppearance.BorderSize = 0;
+            this.btnKayitTamamla.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            this.btnKayitTamamla.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKayitTamamla.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnKayitTamamla.ForeColor = System.Drawing.Color.Transparent;
             this.btnKayitTamamla.Location = new System.Drawing.Point(836, 634);
@@ -205,6 +209,21 @@
             this.label6.TabIndex = 24;
             this.label6.Text = "KULLANICI TİPİ";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.PeachPuff;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Colonna MT", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(49, 55);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(79, 55);
+            this.button1.TabIndex = 25;
+            this.button1.Text = "≡";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // KayitOl
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -212,6 +231,7 @@
             this.BackgroundImage = global::eXamSystem.Properties.Resources._2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1315, 761);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox5);
@@ -227,6 +247,7 @@
             this.Controls.Add(this.btnKayitTamamla);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "KayitOl";
             this.Text = "KayitOl";
@@ -249,5 +270,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button1;
     }
 }

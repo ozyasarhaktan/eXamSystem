@@ -46,7 +46,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.button7 = new System.Windows.Forms.Button();
-            this.pnlSoruEkle = new System.Windows.Forms.Panel();
+            this.pnl = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -246,20 +246,20 @@
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
-            // pnlSoruEkle
+            // pnl
             // 
-            this.pnlSoruEkle.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlSoruEkle.Location = new System.Drawing.Point(198, 0);
-            this.pnlSoruEkle.Name = "pnlSoruEkle";
-            this.pnlSoruEkle.Size = new System.Drawing.Size(867, 607);
-            this.pnlSoruEkle.TabIndex = 7;
+            this.pnl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnl.Location = new System.Drawing.Point(198, 0);
+            this.pnl.Name = "pnl";
+            this.pnl.Size = new System.Drawing.Size(867, 607);
+            this.pnl.TabIndex = 7;
             // 
             // Ogretmen
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1065, 607);
             this.ControlBox = false;
-            this.Controls.Add(this.pnlSoruEkle);
+            this.Controls.Add(this.pnl);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -301,6 +301,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Panel pnlSoruEkle;
+        private System.Windows.Forms.Panel pnl;
     }
 }

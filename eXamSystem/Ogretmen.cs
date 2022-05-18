@@ -24,12 +24,12 @@ namespace eXamSystem
 
         private void Ogretmen_Load(object sender, EventArgs e)
         {
-            pnlSoruEkle.Visible = false;
+            pnl.Visible = false;
         }
 
         private void btnSoruEkle_Click(object sender, EventArgs e)
         {
-            pnlSoruEkle.Visible = true;
+            pnl.Visible = true;
         }
     }
 }

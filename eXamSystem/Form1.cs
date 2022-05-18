@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace eXamSystem
 {
@@ -16,12 +17,9 @@ namespace eXamSystem
         {
             InitializeComponent();
         }
-
         private void Form1_Load(object sender, EventArgs e)
         {
-            Ogretmen ogretmen = new Ogretmen();
-            ogretmen.Show();
-            this.Hide();
+
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -40,16 +38,43 @@ namespace eXamSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(txtUsername.Text =="aa" && txtSifre.Text =="22" && comboBox1.SelectedIndex== 0)
+            string kullAdi = txtUsername.Text;
+            string kullSifre = txtSifre.Text;
+            
+            sqlBaglanti sqlBaglanti = new sqlBaglanti();
+            sqlBaglanti.baglanti();
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = sqlBaglanti.baglanti();
+
+            cmd.CommandText = "select * from Users where kulladi= '" + txtUsername.Text +
+                "' and password= '" + txtSifre.Text + "' and userTypeID ='" +comboBox1.SelectedIndex+"'";
+            SqlDataReader dr = cmd.ExecuteReader();
+            if (dr.Read())
             {
-                Ogretmen ogretmen = new Ogretmen();
-                ogretmen.Show();
-                this.Hide();
+                if(comboBox1.SelectedIndex == 1)
+                {
+                    MessageBox.Show("Admin Ekranı");
+                }
+                
+                else if (comboBox1.SelectedIndex == 2)
+                {
+                    MessageBox.Show("Öğrenci Ekranı");
+                }
+                    
+                else if (comboBox1.SelectedIndex == 3)
+                {
+                    MessageBox.Show("Öğretmen Ekranı");
+                    Ogretmen ogretmen = new Ogretmen();
+                    ogretmen.Show();
+                    this.Hide();
+                }
+                    
             }
             else
             {
-                MessageBox.Show("Tekrar Dene");
+                MessageBox.Show("Kullanıcı adı , şifre veya kullanıcı tipi hatalı olabilir !");
             }
+
         }
 
         private void lblSifreUnutma_Click(object sender, EventArgs e)

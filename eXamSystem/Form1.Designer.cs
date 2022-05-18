@@ -173,13 +173,15 @@
             this.comboBox1.ForeColor = System.Drawing.SystemColors.Window;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "Öğretmen",
+            "Seçiniz",
+            "Admin",
             "Öğrenci",
-            "Admin"});
+            "Öğretmen"});
             this.comboBox1.Location = new System.Drawing.Point(403, 111);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(367, 31);
             this.comboBox1.TabIndex = 9;
+            this.comboBox1.Text = "Seçiniz";
             // 
             // label5
             // 
@@ -239,7 +241,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnGiris);
             this.DoubleBuffered = true;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

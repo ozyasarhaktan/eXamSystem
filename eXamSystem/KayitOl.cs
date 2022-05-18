@@ -17,17 +17,30 @@ namespace eXamSystem
         {
             InitializeComponent();
         }
-       private string connStr = @"Data Source=NATKAH;Initial Catalog=examSystem;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
         private void btnKayitTamamla_Click(object sender, EventArgs e)
         {
-            SqlConnection sqlcon = new SqlConnection(connStr);
-            SqlCommand cmd = new SqlCommand("insert into Users (userName,userSurname,eMail,password,userTypeID,kullAdi");
-            //cmd.Parameters.Add("userName", txtIsim);
-            //cmd.Parameters.Add("userSurname", txtSoyisim);
-            //cmd.Parameters.Add("eMail", txtEmail);
-            //cmd.Parameters.Add("password", txtPassword);
-            //cmd.Parameters.Add("kullAdi", txtkullAdi);
+            Users users = new Users();
+            users.Isim = txtIsim.Text;
+            users.Soyisim = txtSoyisim.Text;  
+            users.Email = txtEmail.Text;
+            users.password = txtPassword.Text;
+            users.kullAdi = txtkullAdi.Text;
+            users.userType = comboBox1.SelectedIndex;
 
+            try
+            {
+                users.PersonelKayıtEt();
+                MessageBox.Show("Kişi Eklendi.");
+                Form1 form = new Form1();
+                form.Show();
+                this.Hide();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("İşlem Başarısız!");
+                throw ex ;
+            }
+         
         }
 
         private void button1_Click(object sender, EventArgs e)

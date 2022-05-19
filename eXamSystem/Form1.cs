@@ -66,7 +66,7 @@ namespace eXamSystem
                     
                 else if (comboBox1.SelectedIndex == 3)
                 {
-                    MessageBox.Show("Öğretmen Ekranı");
+                    MessageBox.Show("Yetkili Ekranı");
                     Ogretmen ogretmen = new Ogretmen();
                     ogretmen.Show();
                     this.Hide();

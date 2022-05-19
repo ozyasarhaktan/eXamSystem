@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ogretmen));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnCıkıs = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.btnSoruSil = new System.Windows.Forms.Button();
             this.btnSoruEkle = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -75,7 +74,6 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.IndianRed;
             this.panel1.Controls.Add(this.btnCıkıs);
-            this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.btnSoruSil);
             this.panel1.Controls.Add(this.btnSoruEkle);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -97,24 +95,12 @@
             this.btnCıkıs.UseVisualStyleBackColor = false;
             this.btnCıkıs.Click += new System.EventHandler(this.btnCıkıs_Click);
             // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.Firebrick;
-            this.button4.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(3, 450);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(198, 100);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "Soruları Göster";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
             // btnSoruSil
             // 
             this.btnSoruSil.BackColor = System.Drawing.Color.Firebrick;
             this.btnSoruSil.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnSoruSil.ForeColor = System.Drawing.Color.White;
-            this.btnSoruSil.Location = new System.Drawing.Point(3, 307);
+            this.btnSoruSil.Location = new System.Drawing.Point(0, 376);
             this.btnSoruSil.Name = "btnSoruSil";
             this.btnSoruSil.Size = new System.Drawing.Size(198, 106);
             this.btnSoruSil.TabIndex = 4;
@@ -525,7 +511,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnSoruEkle;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button btnSoruSil;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;

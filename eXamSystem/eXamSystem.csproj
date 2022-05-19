@@ -58,6 +58,12 @@
     <Compile Include="KayitOl.Designer.cs">
       <DependentUpon>KayitOl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ogrenci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ogrenci.Designer.cs">
+      <DependentUpon>Ogrenci.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ogretmen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +78,18 @@
     <Compile Include="SifremiUnuttum.Designer.cs">
       <DependentUpon>SifremiUnuttum.cs</DependentUpon>
     </Compile>
+    <Compile Include="Sinav.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sinav.Designer.cs">
+      <DependentUpon>Sinav.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SoruSilme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoruSilme.Designer.cs">
+      <DependentUpon>SoruSilme.cs</DependentUpon>
+    </Compile>
     <Compile Include="sqlBaglanti.cs" />
     <Compile Include="Users.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -79,6 +97,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="KayitOl.resx">
       <DependentUpon>KayitOl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ogrenci.resx">
+      <DependentUpon>Ogrenci.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ogretmen.resx">
       <DependentUpon>Ogretmen.cs</DependentUpon>
@@ -95,6 +116,12 @@
     </Compile>
     <EmbeddedResource Include="SifremiUnuttum.resx">
       <DependentUpon>SifremiUnuttum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sinav.resx">
+      <DependentUpon>Sinav.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SoruSilme.resx">
+      <DependentUpon>SoruSilme.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

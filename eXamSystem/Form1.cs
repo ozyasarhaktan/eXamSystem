@@ -59,6 +59,9 @@ namespace eXamSystem
                 else if (comboBox1.SelectedIndex == 2)
                 {
                     MessageBox.Show("Öğrenci Ekranı");
+                    Ogrenci ogrenci = new Ogrenci();
+                    ogrenci.Show();
+                    this.Hide();
                 }
                     
                 else if (comboBox1.SelectedIndex == 3)
@@ -74,7 +77,7 @@ namespace eXamSystem
             {
                 MessageBox.Show("Kullanıcı adı , şifre veya kullanıcı tipi hatalı olabilir !");
             }
-
+            
         }
 
         private void lblSifreUnutma_Click(object sender, EventArgs e)

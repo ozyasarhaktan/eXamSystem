@@ -190,9 +190,9 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Seçiniz",
-            "Admin",
+            "",
             "Öğrenci",
-            "Öğretmen"});
+            "Yetkili"});
             this.comboBox1.Location = new System.Drawing.Point(976, 555);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(274, 45);
